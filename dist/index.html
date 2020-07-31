@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="projects">
+        <button id="defaultButton">Default Project</button>
+    </div>
+    <button id="newProject">New Project</button>
+    <div id="projectName" style="display: none;">
+        <label for="name">Project Name</label>
+        <input required name="name" type="text">
+        <button>Submit</button>
+    </div>
+    <button id="viewAll">View All Projects</button>
+    <button id="newTask">New Task</button>
+    <div>
+        <form onsubmit=" return false;" style="display: none;">
+            <div>
+                <label for="title">Task Title</label>
+                <input type="text" name="title" id="">
+            </div>
+            <div>
+                <label for="description">Task Description</label>
+                <input type="text" name="description" id="">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input id="date" type="date" name="lastDate" id="">
+            </div>
+            <div>
+                <label for="priority">Priority</label>
+                <input type="text" name="priority" id="">
+            </div>
+            <button type="button " id="submit">Submit</button>
+
+        </form>
+    </div>
+    <main>
+        <div id="todos">
+            <div id="default"></div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
